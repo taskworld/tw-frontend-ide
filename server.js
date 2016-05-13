@@ -16,7 +16,9 @@ const mainSaga = require('./mainSaga')
 
 const http = require('http')
 const server = http.createServer()
-server.listen(1435, 'localhost')
+server.listen(1435, 'localhost', function () {
+  console.log('Listening at ' + process.env.IDESUNE_URL)
+})
 
 const io = require('socket.io')(server)
 const sagas = createSagaMiddleware()

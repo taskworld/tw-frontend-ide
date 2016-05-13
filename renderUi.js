@@ -8,6 +8,7 @@ function renderUi (state) {
   elements.push(renderProcessButton('karma', State.getKarmaStatus(state), 'KARMA_BUTTON_CLICK'))
   elements.push(renderProcessButton('server', state.devServer, 'DEV_SERVER_BUTTON_CLICK'))
   elements.push(renderProcessButton('server(prod)', state.devServerProd, 'DEV_SERVER_PROD_BUTTON_CLICK'))
+  return elements
 }
 
 function renderProcessButton (name, process, actionType) {
