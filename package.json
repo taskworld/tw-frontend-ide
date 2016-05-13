@@ -1,0 +1,27 @@
+{
+  "name": "tw-frontend-ide",
+  "version": "1.0.0",
+  "description": "IDE for frontend engineers...",
+  "main": "index.js",
+  "bin": {
+    "tw-frontend-ide": "./server.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_pty": "^3.0.1",
+    "debug": "^2.2.0",
+    "nodemon": "^1.9.2",
+    "redux": "^3.5.2",
+    "redux-saga": "^0.10.2",
+    "reselect": "^2.5.1",
+    "socket.io": "^1.4.6",
+    "updeep": "^0.14.0"
+  },
+  "devDependencies": {
+    "standard": "^7.0.1"
+  }
+}
