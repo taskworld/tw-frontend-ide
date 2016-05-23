@@ -55,7 +55,7 @@ function * pty (name, command, args, options) {
 
 function * runCommand (name, command, args, options) {
   yield put(status(name, 'starting'))
-  const process = yield call(pty, name, command, args, options)
+  const process = yield call(pty, name, command, [ ...args ], Object.assign({ }, options))
   try {
     while (true) {
       const message = yield take(process)
